@@ -1,0 +1,48 @@
+/* Effective stylesheet produced by snapshot save */
+.mytext { font-family: "Arial"; font-size: 14px; color: rgb(0, 0, 0); }
+* { margin: 0px; padding: 0px; }
+body { background: url("h_image_peaacock.jpg") repeat-x scroll left top rgb(255, 255, 255); text-align: justify; font-family: "Arial"; font-size: 11px; color: rgb(117, 126, 130); }
+h1, h2, h3 { color: rgb(170, 40, 8); }
+h1 {  }
+h2 { color: rgb(0, 0, 0); font-size: 18px; font-family: "Arial"; }
+p, blockquote, ul, ol { margin-bottom: 20px; line-height: 2em; }
+p {  }
+ul, ol, li { margin: 0px; padding: 0px; list-style: none outside none; }
+a { text-decoration: underline; color: rgb(70, 130, 180); }
+a:hover { text-decoration: none; color: rgb(70, 130, 180); }
+#wrapper {  }
+#header { width: 1110px; height: 120px; margin: 0px auto; }
+#logo { float: left; width: 270px; height: 76px; margin: 0px; padding: 15px 0px 0px 30px; }
+#logo h1 { margin: 0px; padding: 0px; font: 54px "Arial"; }
+#logo h2 { margin: -4px 0px 0px; padding: 4px 0px 0px 32px; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: normal; color: rgb(255, 255, 255); font-family: "Arial"; }
+#logo a { text-decoration: none; color: rgb(255, 255, 255); }
+#menu { float: right; width: 790px; height: 90px; }
+#menu ul { margin: 0px 0px 0px 30px; padding: 0px 0px 0px 140px; list-style: none outside none; line-height: normal; }
+#menu li { display: inline; text-align: center; }
+#menu a { display: block; float: left; height: 55px; margin-right: 1px; padding: 35px 20px 0px; letter-spacing: -1px; text-decoration: none; text-align: center; text-transform: lowercase; font-family: "Arial"; font-size: 24px; font-weight: normal; color: rgb(255, 255, 255); }
+#menu a:hover { text-decoration: underline; }
+#menu .active a {  }
+#page { width: 1160px; margin: 0px auto; }
+#content { float: left; width: 780px; }
+.post { background: url("urn:download-error:http://www.mhotspot.com/images/img05.jpg") repeat-y scroll left top transparent; }
+.post-bgtop { background: url("urn:download-error:http://www.mhotspot.com/images/img04.jpg") no-repeat scroll left top transparent; }
+.post-bgbtm { background: url("urn:download-error:http://www.mhotspot.com/images/img06.jpg") no-repeat scroll left bottom transparent; padding: 5px 40px 30px; }
+.post .title { margin: 0px; padding: 0px 0px 5px; color: rgb(0, 0, 0); font-size: 20px; font-weight: bold; }
+.post img { float: left; padding: 15px 0px; }
+#sidebar { float: right; width: 380px; background: url("urn:download-error:http://www.mhotspot.com/images/img08.jpg") repeat-y scroll left top transparent; font-size: 14px; }
+#sidebar-bgtop { background: url("urn:download-error:http://www.mhotspot.com/images/img07.jpg") no-repeat scroll left top transparent; }
+#sidebar-bgbtm { background: url("urn:download-error:http://www.mhotspot.com/images/img09.jpg") no-repeat scroll left bottom transparent; padding: 5px 40px 20px; }
+#sidebar ul { margin: 0px; padding: 0px; list-style: none outside none; line-height: normal; }
+#sidebar li { margin-bottom: 1px; }
+#sidebar li ul { margin: 0px; padding: 0px 0px 40px; }
+#sidebar li li { margin: 0px; padding: 7px 0px; border: medium none; background: url("img10.jpg") repeat-x scroll left bottom transparent; font-family: "Arial"; }
+#sidebar li li a { background: url("img11.jpg") no-repeat scroll left 3px transparent; padding-left: 20px; }
+#sidebar h2 { margin: 0px; padding: 0px 0px 20px; text-transform: lowercase; font-family: "Arial"; font-size: 180%; font-weight: normal; color: rgb(69, 78, 85); }
+#sidebar p { margin: 0px; line-height: normal; color: rgb(212, 199, 146); }
+#sidebar a { border: medium none; text-decoration: none; color: rgb(0, 0, 0); }
+#sidebar a:hover { text-decoration: underline; color: rgb(70, 130, 180); }
+#footer-wrapper { background: url("f_image.jpg") repeat-x scroll left top rgb(247, 247, 247); padding: 5px 0px; }
+#footer { width: 900px; margin: 0px auto; color: rgb(255, 255, 255); }
+#footer p { margin: 0px; text-align: center; font-size: 11px; }
+#footer a { text-decoration: underline; color: rgb(255, 255, 255); }
+#footer a:hover { text-decoration: none; }
