@@ -245,6 +245,8 @@ namespace HotspotShare
 					isBusy = false;
 					isStarted = true;
 					_manualStartIsInPrgress = false;
+
+					sysIcon.Icon = Properties.Resources.AppiconTray;
 					break;
 
 				case HostedNetworkManager.WorkingStatus.Stopped:
@@ -259,6 +261,8 @@ namespace HotspotShare
 
 					// reload the connections list
 					hostedNetworkManager.ReadNetworkConnectionsAsync();
+
+					sysIcon.Icon = Properties.Resources.AppiconTrayDisabled;
 					break;
 
 
@@ -546,6 +550,7 @@ namespace HotspotShare
 				case HostedNetworkManager.WorkingStatus.Stopped:
 				case HostedNetworkManager.WorkingStatus.StartFailed:
 					_manualStartIsInPrgress = true;
+					hostedNetworkManager.ResetFailedToEnableSharingNetwork();
 					hostedNetworkManager.StartAsync();
 					break;
 

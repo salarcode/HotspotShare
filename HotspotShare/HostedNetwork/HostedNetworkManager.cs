@@ -167,6 +167,13 @@ namespace HotspotShare.HostedNetwork
 		{
 			StationsReadRequest();
 		}
+		/// <summary>
+		/// Resets the failed network status, causing to display the warning again.
+		/// </summary>
+		public void ResetFailedToEnableSharingNetwork()
+		{
+			_lastFailedToEnableSharingFor = null;
+		}
 		#endregion
 
 		#region Private Methods

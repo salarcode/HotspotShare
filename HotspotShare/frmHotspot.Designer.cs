@@ -63,10 +63,10 @@
 			this.colIP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colMac = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.mnuUsers = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.mnuCopyUserInfo = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuCopyUserIP = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuCopyUserMACAddress = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuCopyUserHostname = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuCopyUserInfo = new System.Windows.Forms.ToolStripMenuItem();
 			this.imgIcons20 = new System.Windows.Forms.ImageList(this.components);
 			this.btnRefresh = new System.Windows.Forms.Button();
 			this.gpbxUsersSettings = new System.Windows.Forms.GroupBox();
@@ -189,6 +189,7 @@
 			// 
 			this.cmdSharedConnection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.cmdSharedConnection.DisplayMember = "Name";
 			this.cmdSharedConnection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cmdSharedConnection.Enabled = false;
 			this.cmdSharedConnection.FormattingEnabled = true;
@@ -397,6 +398,13 @@
 			this.mnuUsers.Size = new System.Drawing.Size(178, 92);
 			this.mnuUsers.Opening += new System.ComponentModel.CancelEventHandler(this.mnuUsers_Opening);
 			// 
+			// mnuCopyUserInfo
+			// 
+			this.mnuCopyUserInfo.Name = "mnuCopyUserInfo";
+			this.mnuCopyUserInfo.Size = new System.Drawing.Size(177, 22);
+			this.mnuCopyUserInfo.Text = "Copy User Info";
+			this.mnuCopyUserInfo.Click += new System.EventHandler(this.mnuCopyUserInfo_Click);
+			// 
 			// mnuCopyUserIP
 			// 
 			this.mnuCopyUserIP.Name = "mnuCopyUserIP";
@@ -417,13 +425,6 @@
 			this.mnuCopyUserHostname.Size = new System.Drawing.Size(177, 22);
 			this.mnuCopyUserHostname.Text = "Copy Hostname";
 			this.mnuCopyUserHostname.Click += new System.EventHandler(this.mnuCopyUserHostname_Click);
-			// 
-			// mnuCopyUserInfo
-			// 
-			this.mnuCopyUserInfo.Name = "mnuCopyUserInfo";
-			this.mnuCopyUserInfo.Size = new System.Drawing.Size(177, 22);
-			this.mnuCopyUserInfo.Text = "Copy User Info";
-			this.mnuCopyUserInfo.Click += new System.EventHandler(this.mnuCopyUserInfo_Click);
 			// 
 			// imgIcons20
 			// 

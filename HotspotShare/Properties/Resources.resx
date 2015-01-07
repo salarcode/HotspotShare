@@ -121,6 +121,9 @@
   <data name="AppiconTray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\AppiconTray.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AppiconTrayDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\appicontraydisabled.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AppiconTrayUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\AppiconTrayUser.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
