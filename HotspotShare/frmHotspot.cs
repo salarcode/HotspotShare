@@ -389,7 +389,7 @@ namespace HotspotShare
 			}
 			if (usersToNotify.Count > 0 && chkUsersNotifyNewUser.Checked)
 			{
-				var message=string.Join("\n", usersToNotify.Select(a => a.HostName + ", " + a.IpAddress.ToString()));
+				var message = string.Join("\n", usersToNotify.Select(a => a.HostName + ", " + a.IpAddress.ToString()));
 
 				message = "The following user(s) are connected:\n" + message;
 				sysIcon.ShowBalloonTip(1000, Language.App_Name, message, ToolTipIcon.Info);
@@ -418,8 +418,9 @@ namespace HotspotShare
 		{
 			_isVisibleCore = true;
 			this.Show();
-			this.Focus();
+			this.WindowState = FormWindowState.Normal;
 			this.Activate();
+			this.Focus();
 		}
 
 
@@ -694,7 +695,7 @@ namespace HotspotShare
 			var user = lstUsers.SelectedItems[0].Tag as StationUser;
 			if (user == null)
 				return;
-			Clipboard.SetText(user.IpAddress??"");
+			Clipboard.SetText(user.IpAddress ?? "");
 		}
 
 		private void mnuCopyUserMACAddress_Click(object sender, EventArgs e)
@@ -704,7 +705,7 @@ namespace HotspotShare
 			var user = lstUsers.SelectedItems[0].Tag as StationUser;
 			if (user == null)
 				return;
-			Clipboard.SetText(user.MacAddress??"");
+			Clipboard.SetText(user.MacAddress ?? "");
 		}
 
 		private void mnuCopyUserHostname_Click(object sender, EventArgs e)
