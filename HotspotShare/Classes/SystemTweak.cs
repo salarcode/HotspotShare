@@ -8,7 +8,7 @@ using Microsoft.Win32;
 
 namespace HotspotShare.Classes
 {
-	public static class SystemTweak
+	internal static class SystemTweak
 	{
 		public static void TweakTheSystem()
 		{
@@ -37,6 +37,21 @@ namespace HotspotShare.Classes
 			{
 			}
 		}
+
+		public static string IcsDomainSuffix()
+		{
+			try
+			{
+				return
+					(Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters", "ICSDomain", "") as
+						string) ?? "";
+			}
+			catch (Exception)
+			{
+				return "";
+			}
+		}
+
 
 		private static void AllowTheHostedNetwork()
 		{

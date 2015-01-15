@@ -29,6 +29,7 @@ namespace HotspotShare
 		private StickyWindow _sticky;
 
 		private HostedNetworkManager hostedNetworkManager;
+		private string _icsDomainNameSuffix;
 		#endregion
 
 		public frmHotspot()
@@ -82,6 +83,8 @@ namespace HotspotShare
 			hostedNetworkManager.ReadNetworkConnectionsAsync();
 
 			ReadFormSettings();
+
+			_icsDomainNameSuffix = SystemTweak.IcsDomainSuffix();
 
 			if (AppConfig.AppStartedFromStartup)
 			{
@@ -343,9 +346,10 @@ namespace HotspotShare
 					usersToNotify.Add(user);
 					user.NotifiedConnected = true;
 				}
+				user.SetIcsDomainSuffix(_icsDomainNameSuffix);
 
-				var listViewItem = new ListViewItem(user.HostName, 0);
-				listViewItem.Text = user.HostName;
+				var listViewItem = new ListViewItem(user.HostNameNoPrefix, 0);
+				listViewItem.Text = user.HostNameNoPrefix;
 
 				if (!string.IsNullOrEmpty(user.Vendor))
 					desc.Add(user.Vendor);
@@ -389,7 +393,7 @@ namespace HotspotShare
 			}
 			if (usersToNotify.Count > 0 && chkUsersNotifyNewUser.Checked)
 			{
-				var message = string.Join("\n", usersToNotify.Select(a => a.HostName + ", " + a.IpAddress.ToString()));
+				var message = string.Join("\n", usersToNotify.Select(a => a.HostNameNoPrefix + ", " + a.IpAddress.ToString()));
 
 				message = "The following user(s) are connected:\n" + message;
 				sysIcon.ShowBalloonTip(1000, Language.App_Name, message, ToolTipIcon.Info);
