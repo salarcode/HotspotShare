@@ -386,8 +386,16 @@ namespace HotspotShare
 				}
 				else
 				{
-					sysIcon.Icon = Properties.Resources.AppiconTray;
 					Icon = Properties.Resources.AppiconTray;
+
+					if (hostednetwork.Status == HostedNetworkManager.WorkingStatus.Stopped)
+					{
+						sysIcon.Icon = Properties.Resources.AppiconTrayDisabled;
+					}
+					else
+					{
+						sysIcon.Icon = Properties.Resources.AppiconTray;
+					}
 				}
 				_hasStationUsers = hasUsers;
 			}
